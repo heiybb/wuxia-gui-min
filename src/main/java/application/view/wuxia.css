@@ -1,0 +1,25 @@
+.jfx-date-picker .input-line {
+    -fx-background-color: transparent;
+}
+
+.jfx-date-picker .input-focused-line {
+    -fx-background-color: transparent;
+}
+
+.jfx-date-picker .text-field {
+    -jfx-unfocus-color: transparent;
+    -jfx-focus-color: transparent;
+    -fx-prompt-text-fill: #adaeb0;
+    -fx-text-fill: #adaeb0;
+}
+
+.jfx-text-field {
+    -jfx-focus-color: transparent;
+    -jfx-unfocus-color: transparent;
+}
+
+.jfx-button {
+    -fx-border-color: #adaeb0;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+}

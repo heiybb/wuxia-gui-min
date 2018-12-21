@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTreeTableColumn?>
+<?import com.jfoenix.controls.JFXTreeTableView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="600.0" maxWidth="800.0" minHeight="600.0" minWidth="800.0" prefHeight="600.0" prefWidth="800.0" stylesheets="@wuxia.css" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.MainWindowController">
+    <children>
+        <ImageView fitHeight="615.0" fitWidth="815.0" focusTraversable="true" nodeOrientation="INHERIT" preserveRatio="true" AnchorPane.topAnchor="0.0">
+            <image>
+                <Image url="@../img/background.png" />
+            </image>
+        </ImageView>
+        <JFXButton layoutX="20.0" layoutY="98.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#jiLiFileExport" prefHeight="36.0" prefWidth="194.0" text="导出发放文件" textFill="#adaeb0" AnchorPane.topAnchor="98.0" />
+        <JFXButton fx:id="dkpFileChooser" layoutX="20.0" layoutY="40.0" maxHeight="36.0" minHeight="-Infinity" mnemonicParsing="false" onAction="#dkpFileSelect" prefHeight="36.0" prefWidth="194.0" text="导入DKP 文件" textFill="#adaeb0" AnchorPane.topAnchor="40.0" />
+        <JFXTreeTableView fx:id="dkpTable" layoutX="50.0" layoutY="186.0" opacity="0.7" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="160.0">
+            <columns>
+                <JFXTreeTableColumn fx:id="idColumn" prefWidth="120.0" style="-fx-alignment: center-left;" text="ID" />
+                <JFXTreeTableColumn fx:id="bpwrColumn" prefWidth="70.0" style="-fx-alignment: center;" text="委任" />
+                <JFXTreeTableColumn fx:id="bpzxColumn" prefWidth="50.0" style="-fx-alignment: center;" text="醉侠" />
+                <JFXTreeTableColumn prefWidth="50.0" style="-fx-alignment: center;" text="血战" fx:id="xzhhColumn" />
+                <JFXTreeTableColumn fx:id="kfzcColumn" prefWidth="50.0" style="-fx-alignment: center;" text="战场" />
+                <JFXTreeTableColumn fx:id="lueduoColumn" prefWidth="50.0" style="-fx-alignment: center;" text="掠夺" />
+                <JFXTreeTableColumn fx:id="zhenfengColumn" prefWidth="50.0" style="-fx-alignment: center;" text="争锋" />
+                <JFXTreeTableColumn fx:id="zijinColumn" prefWidth="85.0" style="-fx-alignment: center;" text="资金" />
+                <JFXTreeTableColumn fx:id="yushiColumn" prefWidth="85.0" style="-fx-alignment: center;" text="玉石" />
+                <JFXTreeTableColumn fx:id="dkpColumn" prefWidth="85.0" style="-fx-alignment: center;" text="DKP" />
+                <JFXTreeTableColumn fx:id="rewardColumn" prefWidth="50.0" style="-fx-alignment: center;" text="箱子" />
+            </columns>
+        </JFXTreeTableView>
+        <Label alignment="TOP_LEFT" layoutX="415.0" layoutY="40.0" maxHeight="97.0" maxWidth="500.0" minHeight="90.0" minWidth="355.0" prefHeight="97.0" prefWidth="465.0" text="1.导入BangPai_DKPModifyRecord.txt文件(单帮只需这一个文件)&#10;&#10;2.根据需要选择时间区间(默认为当前周)&#10;&#10;3.导出发放文件即可&#10;&#10;&#10;" textFill="#adaeb0" AnchorPane.bottomAnchor="463.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="40.0" />
+    </children>
+</AnchorPane>

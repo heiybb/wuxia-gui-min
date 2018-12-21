@@ -1,5 +1,16 @@
 # wuxia-gui-min
-minimal function for the wuxia dkp management
+天刀DKP激励发放导出工具迷你版  
+仅仅提供文件转换为激励文件功能  
 
-导入DKP记录文件 BangPai_DKPModifyRecord.txt
-导出发放文件即可
+##箱子计算规则  
+每70委任一个箱子 上限3个 多余不计    
+委任数量不足210个的除70取整  
+醉侠和血战海河州都完成的计算1个  
+跨服战场没一场计算1个  
+争锋战一场计算1个  
+掠夺战不计算  
+
+##使用方法  
+导入DKP记录文件 BangPai_DKPModifyRecord.txt  
+导出发放文件即可  
+发放箱子数量可以手动修改 会实时在导出的激励文件中呈现
